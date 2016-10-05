@@ -1,0 +1,28 @@
+{
+  "name": "theme-oceanic-reef",
+  "displayName": "Theme - Oceanic Reef",
+  "description": "Oceanic Reef theme for VSCode",
+  "version": "0.0.1",
+  "publisher": "pzuraq",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "icon": "preview.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Oceanic Reef - Dark UI",
+        "uiTheme": "vs-dark",
+        "path": "./themes/oceanic-reef.tmTheme"
+      },
+      {
+        "label": "Oceanic Reef - Light UI",
+        "uiTheme": "vs",
+        "path": "./themes/oceanic-reef.tmTheme"
+      }
+    ]
+  }
+}
