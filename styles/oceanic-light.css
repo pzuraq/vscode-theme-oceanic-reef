@@ -31,31 +31,31 @@
   background-color: #0C2433;
 }
 
-.monaco-workbench > .editor > .content > .one-editor-silo > .container {
+.monaco-workbench.nosidebar > .editor > .content > .one-editor-silo > .container {
     display: flex;
     flex-direction: row;
 
 }
 
-.monaco-workbench>.part.editor>.content>.one-editor-silo>.container>.title {
+.monaco-workbench.nosidebar>.part.editor>.content>.one-editor-silo>.container>.title {
   overflow: visible;
   height: 100%;
   flex-direction: column;
 }
 
-.monaco-workbench>.part.editor>.content>.one-editor-silo>.container>.title .tabs-container {
+.monaco-workbench.nosidebar >.part.editor>.content>.one-editor-silo>.container>.title .tabs-container {
     flex-direction: column;
     height: 100%;
 }
 
-.vs .monaco-workbench > .part.editor > .content > .one-editor-silo
+.vs .monaco-workbench.nosidebar > .part.editor > .content > .one-editor-silo
   > .container > .title .tabs-container > .tab {
     width: 100%;
 }
 
 .vs .monaco-workbench > .part.editor > .content > .one-editor-silo
   > .container > .title .tabs-container > .tab:not(.active) {
-    background-color: #0C2433;
+    background-color: #0C2433 !important;
     border-left-color: transparent;
 }
 
@@ -69,13 +69,13 @@
     border-right-color: transparent;
 }
 
-.vs .monaco-workbench >.part.editor >.content >.one-editor-silo
-  > .container > .title.tabs {
+.vs .monaco-workbench>.part.editor>.content>.one-editor-silo
+  >.container>.title.tabs.shows-tabs {
     background: #0C2433;
 }
 
-.vs .monaco-workbench > .part.editor > .content
-  > .one-editor-silo > .container > .title.tabs:before {
+.vs .monaco-workbench>.part.editor>.content>.one-editor-silo
+  >.container>.title.tabs.shows-tabs {
   border-top: solid 1px transparent;
 }
 
@@ -116,7 +116,7 @@
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cg fill='%23262626'%3E%3Ccircle cx='3.5' cy='7.5' r='2.5'/%3E%3Ccircle cx='8.5' cy='7.5' r='2.5'/%3E%3Ccircle cx='13.5' cy='7.5' r='2.5'/%3E%3C/g%3E%3Cg fill='%23C5C5C5'%3E%3Ccircle cx='3.5' cy='7.5' r='1.5'/%3E%3Ccircle cx='8.5' cy='7.5' r='1.5'/%3E%3Ccircle cx='13.5' cy='7.5' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.monaco-editor, .monaco-editor .inputarea {
+.monaco-workbench.nosidebar .monaco-editor, .monaco-editor .inputarea {
   margin-top: 17px;
 }
 
@@ -186,4 +186,13 @@
 
 .vs .monaco-editor-background .monaco-toolbar .monaco-action-bar .action-item.markers-panel-action-filter .monaco-inputbox {
   border-color: #1d3545;
+}
+
+.monaco-editor-hover {
+  background-color: #0d2839;
+  border: 1px solid #133950;
+}
+
+.monaco-editor .view-ruler {
+  background: rgba(35, 65, 84, 1) !important;
 }
