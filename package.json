@@ -1,5 +1,6 @@
 {
   "name": "theme-oceanic-reef",
+  "repository": "https://github.com/pzuraq/theme-oceanic-reef",
   "displayName": "Theme - Oceanic Reef",
   "description": "Oceanic Reef theme for VSCode",
   "version": "0.1.0",
